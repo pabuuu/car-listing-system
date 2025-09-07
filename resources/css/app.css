@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Custom component styles */
+@layer components {
+  /* --- Navbar links --- */
+  .nav-link {
+    @apply text-slate-100 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+  }
+
+  .nav-link:hover {
+    @apply bg-slate-700 text-white;
+  }
+
+  .nav-link:focus {
+    @apply outline-none ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-800;
+  }
+
+  /* --- Register form --- */
+  .title {
+    @apply text-3xl font-bold text-gray-800 mb-6 text-center;
+  }
+
+  .card {
+    @apply bg-white shadow-lg rounded-xl p-8 border border-gray-200;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition;
+  }
+
+  .input-error {
+    @apply border-red-500 ring-red-500 bg-red-50;
+  }
+
+  .btn {
+    @apply w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition;
+  }
+
+  label {
+    @apply block mb-2 text-sm font-medium text-gray-700;
+  }
+}
